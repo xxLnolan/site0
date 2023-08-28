@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <script>
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0);
+            });
+        </script>
+        <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>xxLnolan</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">xx<span>L</span>nolan</a>
+            <ul class="navbar">
+                <li><a href="#">Accueli</a></li>
+                <li><a href="#apropos">A propos</a></li>
+                <li><a href="#jeux">jeux</a></li>
+                <a href="#contact" class="btn-reserve">contact</a>
+            </ul>
+        </header>
+        <section class="banniere" id="banniere">
+            <div class="contenue">
+                <h2>Accueli</h2>
+                <p>xxLnolan est un sosiéter de codage libre ou vous pourez trouver des jeux.</p>
+                <a class="btn-1" href="#jeux">Nos jeux</a>
+            </div>
+        </section>
+        <section class="apropos" id="apropos">
+            <div class="row">
+                <div class="col50">
+                    <h2 class="titre-text">
+                        <span>A</span> propos
+                    </h2>
+                    <p>xxLnolan a ette creé en 1993 par Nolan Lavenier pour democratiser la programation en devolpen des jeux open souce et des jeux sur scratch.</p>
+                </div>
+                    <div class="col50">
+                        <div class="img">
+                            <img src="./img/scratch.jpg" alt="scratch">
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="jeux" id="jeux">
+            <div class="titre">
+                <h2 class="titre-text">
+                    <span>j</span>eux
+                </h2>
+                <p>Des incoyable jeux.</p>
+            </div>
+            <div class="contenue">
+                <div class="box">
+                    <div class="inbox">
+                        <a href="./projectJump_and_Jump_v2.html">
+                            <img src="./img/jumpv2.png" alt="jeux">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Jump and jump v2</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="contenue">
+                <div class="box">
+                    <div class="inbox">
+                        <a href="./poj_slim.html">
+                            <img src="./img/sliam.png" alt="jeux"> 
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Snail</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="titre">
+                <a href="#jeux" class="btn-1">Nos jeux</a>
+            </div>
+        </section>
+        <section  class="contact" id="contact">
+            <div class="titre noir">
+                <h2 class="titre-text"><span>C</span>ontact</h2>
+                <p>Aider nous a nous amelioré</p>
+            </div>
+            <form class="contactform" action="https://formsubmit.co/7aae7a002fe3c8896ea133e37ed5085d" method="POST">
+                <h3>Envoyer un massage<img class="atation" src="img/Achtung.svg"></h3>
+                <div class="inputboite">
+                    <input name="name" type="text" placeholder="nom" required>
+                </div>
+                <div class="inputboite">
+                    <input name="email" type="email" placeholder="email" required>
+                </div>
+                <div class="inputboite">
+                    <textarea name="massage" row="4" placeholder="message"></textarea>
+                </div>
+                <div class="inputboite">
+                    <button type="submit">envoyer</button>
+                </div>
+            </form>
+        </section>
+        <div class="copyright">
+            <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservé.</p>
+        </div>
+    </body>
+</html>
