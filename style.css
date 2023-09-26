@@ -72,7 +72,7 @@
 }
 
 .temoignage .contenu .box .text h3 {
-    color: #fb911f;
+    color: #08defd;
     margin-top: 20px;
     font-size: 1em;
     font-weight: 600;
@@ -109,7 +109,7 @@ header {
 }
 
 .logo span {
-    color: #fb911f;
+    color: #08defd;
 }
 
 .slama {
@@ -185,7 +185,7 @@ header {
 
 .btn-reserve {
     padding: 10px 20px;
-    background: #fb911f;
+    background: #08defd;
     margin-top: -10px;
     text-transform: uppercase;
     border-radius: 10px;
@@ -197,8 +197,8 @@ header {
 }
 
 header .navbar li a:hover {
-    color: #fb911f;
-    border-bottom: 2px solid #fb911f;
+    color: #08defd;
+    border-bottom: 2px solid #08defd;
 }
 
 .banniere {
@@ -231,7 +231,7 @@ header .navbar li a:hover {
 .btn-1{
     font-size: 1em;
     color: #fff;
-    background: #fb911f;
+    background: #08defd;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 20px;
@@ -277,7 +277,7 @@ section {
 }
 
 .titre-text span {
-    color: #fb911f;
+    color: #08defd;
     font-size: 1.5em;
     font-weight: 700px;
 }
@@ -290,7 +290,7 @@ section {
 }
 
 .titre-text2 span {
-    color: #fb911f;
+    color: #08defd;
     font-size: 1.5em;
     font-weight: 700px;
 }
@@ -411,7 +411,7 @@ section {
     font-size: 1em;
     font-weight: 700;
     color: #ffff;
-    background: #fb911f;
+    background: #08defd;
     display: inline-block;
     cursor: pointer;
     text-transform: uppercase;
@@ -438,7 +438,7 @@ section {
 }
 
 .copyright a {
-    color: #fb911f;
+    color: #08defd;
     text-decoration: none;
     font-weight: 600;
     font-style: italic;
@@ -459,8 +459,8 @@ header.sticky .navbar li a {
 }
 
 header.sticky .navbar li a:hover {
-    color: #fb911f;
-    border-bottom: 2px solid #fb911f;
+    color: #08defd;
+    border-bottom: 2px solid #08defd;
 }
 
 @media (max-width:991px) {
