@@ -486,6 +486,14 @@ header .navbar li a {
         justify-content: center;
         align-items: center;
     }
+
+    .row .col50 img {
+        height: 120px;
+        width: 102px;
+        position: relative;
+        border-radius: 10px;
+        margin-top: 120px;
+      }
 }
 
 .atation {
