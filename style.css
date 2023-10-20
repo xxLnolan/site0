@@ -494,6 +494,22 @@ header .navbar li a {
         border-radius: 10px;
         margin-top: 120px;
       }
+
+      .jeux .contenue {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        width: 335px;
+      }
+    
+    .jeux {
+        margin-top: 15px;
+    }
+    
+    section {
+        padding: 0px;
+    }
 }
 
 .atation {
