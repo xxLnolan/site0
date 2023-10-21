@@ -597,6 +597,12 @@ header.sticky .navbar li a:hover {
         .row{
             flex-direction: column;
         }
+        .row .col50 img {
+            height: 275px;
+            width: 325px;
+            position: relative;
+            border-radius: 10px;
+          }
 }
 
 @media (max-width: 480px)
@@ -621,6 +627,13 @@ header.sticky .navbar li a:hover {
     .temoignage p{
         text-align: center;
     }
+
+    .row .col50 img {
+        height: 275px;
+        width: 325px;
+        position: relative;
+        border-radius: 10px;
+      }
 }
 
 
