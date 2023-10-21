@@ -2,12 +2,6 @@
 
 <html lang="fr">
     <head>
-        <script>
-            window.addEventListener('scroll', function(){
-                const header = document.querySelector('header');
-                header.classList.toggle("sticky", window.scrollY > 0);
-            });
-        </script>
         <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +15,7 @@
     <body>
         <header>
             <a href="#" class="logo">xx<span>L</span>nolan</a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="navbar">
                 <li><a href="#">Accueli</a></li>
                 <li><a href="#apropos">A propos</a></li>
@@ -91,7 +86,7 @@
                 <p>Aider nous a nous amelioré</p>
             </div>
             <form class="contactform" action="https://formsubmit.co/7aae7a002fe3c8896ea133e37ed5085d" method="POST">
-                <h3>Envoyer un massage<img class="atation" src="img/Achtung.svg"></h3>
+                <h3>Envoyer un massage</h3>
                 <div class="inputboite">
                     <input name="name" type="text" placeholder="nom" required>
                 </div>
@@ -109,5 +104,18 @@
         <div class="copyright">
             <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservé.</p>
         </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0 );
+            });
+       
+            function toggleMenu(){
+                const tmenuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            }
+        </script>
     </body>
 </html>
