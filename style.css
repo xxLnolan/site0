@@ -484,54 +484,43 @@ header.sticky .navbar li a:hover {
     border-bottom: 2px solid #08defd;
 }
 
-@media (max-width:991px) {
-header, header.stiky {
-    padding: 10px 20px;
-}
-
-header .navbar li a {
-    text-decoration: none;
-    color: #111;
-    font-size: 1.6em;
-    font-weight: 300;
-}
-
+@media (max-width: 991px) {
+    header, 
+    header.sticky{
+        padding: 10px 20px;
+    }
+    
+    header .navbar li{
+        margin-left: 0px;
+    }
+    
+    header .navbar li a {
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    
     .navbar{
         display: none;
     }
-    
-
-    .row .col50 {
-        position: relative;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
+    section{
+        padding: 20px;
     }
-
-    .row .col50 img {
-        height: 120px;
-        width: 102px;
-        position: relative;
-        border-radius: 10px;
-        margin-top: 120px;
-      }
-
-      .jeux .contenue {
+    
+    header .navbar.active{
+        width: 100%;
+        height: calc(100% -68px);
+        position: fixed;
+        top: 68px;
+        left:0;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        margin-top: 40px;
-        width: 335px;
-      }
-    
-    .jeux {
-        margin-top: 15px;
+        flex-direction: column;
+        background: #ffff;
+        align-items: center;
     }
     
-    section {
-        padding: 0px;
-    }
-
     .menuToggle{
         position: relative;
         width: 40px;
@@ -542,16 +531,95 @@ header .navbar li a {
         cursor: pointer;
         background-size: 30px;
     }
-
-        .menuToggle.active
+    
+    .menuToggle.active
     {
         background-image: url(./images/close.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-origin: center;
     }
+    
     header.sticky .menuToggle{
         filter: invert(1);
+    }
+    
+    
+    .banniere .contenu h2{
+        font-size: 2em;
+    }
+    
+    .row .col50 img{
+        margin-left: 18%;
+    }
+    
+    .contenu p:nth-child(2){
+        font-size: 1.2em;
+    }
+    .expert{
+        margin-top: 0px;
+    }
+    
+    .menu{
+        margin-top: 0px;
+    }
+    
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    
+    .temoignage h2{
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .temoignage p{
+    text-align: center;
+    }
+    
+    .contactform{
+        margin-left: 25%;
+    }
+    
+    
+        .row .col50 {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        
+        }
+    
+        .row{
+            flex-direction: column;
+        }
+}
+
+@media (max-width: 480px)
+{
+    .banniere .contenu h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+
+    .titre-text{
+        color: #000;
+        font-size: 2rem;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+
+    .temoignage h2 
+    {
+        font-size: 1.1em;
+    }
+
+    .temoignage p{
+        text-align: center;
     }
 }
 
