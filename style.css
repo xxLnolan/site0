@@ -585,24 +585,24 @@ header.sticky .navbar li a:hover {
     }
     
     
-        .row .col50 {
-            position: relative;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
-        
-        }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
     
-        .row{
-            flex-direction: column;
-        }
-        .row .col50 img {
-            height: 275px;
-            width: 325px;
-            position: relative;
-            border-radius: 10px;
-          }
+    }
+    
+    .row{
+        flex-direction: column;
+    }
+    .row .col50 img {
+    height: 275px;
+    width: 325px;
+    position: relative;
+    border-radius: 10px;
+    }
 }
 
 @media (max-width: 480px)
@@ -640,10 +640,6 @@ header.sticky .navbar li a:hover {
 
 
 
-.atation {
-  width: 55px;
-  margin-left: 19px;
-}
 
 .jumpv2 {
     width: 770;
