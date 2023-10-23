@@ -2,11 +2,6 @@
 
 <html lang="fr">
     <head>
-        <script>
-            window.addEventListener('scroll', function(){
-                const header = document.querySelector('header');
-                header.classList.toggle("sticky", window.scrollY > 0);
-            });
         </script>
         <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
         <meta charset="UTF-8">
@@ -21,6 +16,7 @@
     <body>
         <header>
             <a href="./index.html#jeux" class="logo">xx<span>L</span>nolan</a>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="navbar">
                 <li><a href="#">jump and...</a></li>
                 <li><a href="#apropos">A propos</a></li>
@@ -30,7 +26,7 @@
         <section class="jumpv2">
             <div class="contenue">
                 <h2 class="titre-text"><span>J</span>ump and jump</h2>
-                <p>jump and jump v2 est un petit jeux <span class="noir">de platforme.</span></p>
+                <p>jump and jump v2 est un petit jeux <span class="blue">de platforme.</span></p>
                 <a class="btn-1" href="#tel">telecharger</a>
             </div>
         </section>
@@ -39,11 +35,11 @@
                 <div class="col50">
                     <h2 class="titre-text">
                         <span>A</span> propos
-                    </h2>aucun documentation oficiel existe</p>
+                    </h2>aucune documentation officiel n'existe</p>
                 </div>
                     <div class="col50">
                         <div class="img">
-                            aucun image na ette trouver
+                            aucune image n'a été trouvé
                         </div>
                     </div>
                 </div>
@@ -83,7 +79,20 @@
             </div>
         </section>
         <div class="copyright">
-            <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservé.</p>
+            <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservés.</p>
         </div>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0 );
+            });
+       
+            function toggleMenu(){
+                const tmenuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            }
+        </script>
     </body>
 </html>

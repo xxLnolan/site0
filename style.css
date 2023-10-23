@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+.blue {
+    color: #08defd;
+}
+
 .titre {
     display: flex;
     width: 100%;
