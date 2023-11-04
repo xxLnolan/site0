@@ -82,7 +82,7 @@
                 <h2 class="titre-text"><span>C</span>ontact</h2>
                 <p>Aider nous a nous amelioré</p>
             </div>
-            <form class="contactform" action="https://formsubmit.co/7aae7a002fe3c8896ea133e37ed5085d" method="POST">
+            <form class="contactform" onsubmit="sendEmail(); reset(); return false;">
                 <h3>Envoyer un message</h3>
                 <div class="inputboite">
                     <input name="name" type="text" placeholder="nom" required>
@@ -101,6 +101,20 @@
         <div class="copyright">
             <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservés.</p>
         </div>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    SecureToken : "c477e1cc-a107-4425-8ed1-edb6be41a456",
+                    To : "xxLnolan@xxLnolan.com",
+                    From : document.getElementById ("email").value,
+                    Subject : "This is the subject",
+                    Body : document.getElementById ("messages").value
+                }).then(
+                message => alert(message)
+                );
+            }
+        </script>
         <script type="text/javascript">
             window.addEventListener('scroll', function(){
                 const header =document.querySelector('header');
