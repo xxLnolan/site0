@@ -2,6 +2,19 @@
 
 <html lang="fr">
     <head>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                const header =document.querySelector('header');
+                header.classList.toggle("sticky", window.scrollY > 0 );
+            });
+       
+            function toggleMenu(){
+                const tmenuToggle = document.querySelector('.menuToggle');
+                const navbar = document.querySelector('.navbar');
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            }
+        </script>
         <meta name="google-site-verification" content="rkoIP6TA8JqLDIxvHLJFtOKPP2Tn8j8yMfsOdUlqUJw" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,13 +98,13 @@
             <form class="contactform" onsubmit="sendEmail(); reset(); return false;">
                 <h3>Envoyer un message</h3>
                 <div class="inputboite">
-                    <input name="name" type="text" placeholder="nom" required>
+                    <input name="name" id="name" type="text" placeholder="nom" required>
                 </div>
                 <div class="inputboite">
-                    <input name="email" type="email" placeholder="email" required>
+                    <input name="email" type="email" id="email" placeholder="email" required>
                 </div>
                 <div class="inputboite">
-                    <textarea name="massage" row="4" placeholder="message"></textarea>
+                    <textarea name="massage" id="massage" row="4" placeholder="message"></textarea>
                 </div>
                 <div class="inputboite">
                     <button type="submit">envoyer</button>
@@ -101,31 +114,21 @@
         <div class="copyright">
             <p>copyright 2023 <a href="#">xxLnolan </a>Tous droits reservés.</p>
         </div>
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
         <script>
             function sendEmail(){
                 Email.send({
-                    SecureToken : "c477e1cc-a107-4425-8ed1-edb6be41a456",
-                    To : "xxLnolan@xxLnolan.com",
-                    From : document.getElementById ("email").value,
-                    Subject : "This is the subject",
-                    Body : document.getElementById ("messages").value
+                    SecureToken : "8566b57e-e50e-4705-bc7c-cc47d9644d90",
+                    To : 'xxLnolan@xxL.com',
+                    From : "laveniernolan@gmail.com",
+                    Subject : "email: " + document.getElementById("email").value,
+                    Body : "email: " + document.getElementById("email").value
+                           + "<br> nom: " + document.getElementById("name").value
+                           + "<br> massages: " + document.getElementById("massage").value
                 }).then(
                 message => alert(message)
                 );
-            }
-        </script>
-        <script type="text/javascript">
-            window.addEventListener('scroll', function(){
-                const header =document.querySelector('header');
-                header.classList.toggle("sticky", window.scrollY > 0 );
-            });
-       
-            function toggleMenu(){
-                const tmenuToggle = document.querySelector('.menuToggle');
-                const navbar = document.querySelector('.navbar');
-                navbar.classList.toggle('active');
-                menuToggle.classList.toggle('active');
             }
         </script>
     </body>
